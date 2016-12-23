@@ -1,15 +1,15 @@
 .storyTitle{
-	text-align: center;
-	color: #36393c;
-	font-family: 'Kumar One';
+    text-align: center;
+    color: #36393c;
+    font-family: 'Kumar One';
 }
 
 .storyTitle:hover {
-	font-family: 'Kumar One Outline';
-	color: #36393c;
-	font-size: 1.5em;
-	text-decoration: none;
-	cursor: pointer;
+    font-family: 'Kumar One Outline';
+    color: #36393c;
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .addButton{
@@ -22,6 +22,7 @@
     border-radius: 50%;
     color: #36393c;
     text-align:center;
+    text-decoration: none;
     background: none;
     box-shadow: 0 0 3px gray;
     font-size: 50px;
@@ -31,4 +32,7 @@
 .addButton:hover {
 	color: white;
     background: #262626;
+}
+.addButton:focus {
+    outline: none !important;
 }

@@ -2,6 +2,36 @@
     <h1 class="pageTitle">Stories</h1>
     <h2 class="center" ng-repeat="story in stories"><a class="storyTitle" href="/story/{{story.id}}">{{story.title}}</a></h2>
     <div class="center">
-    	<button type="button" class="btn btn-default addButton">+</button>
+    	<button type="button" class="btn btn-default addButton" data-toggle="modal" data-target="#myModal">+</button>
     </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title center">Add a New Story</h4>
+        </div>
+        <div class="modal-body">
+        <form name="newStory">
+          <label for="title">Title: <input type="text" ng-model="newStory.title"/></label>
+          <br>
+          <label for="banner">Image URL for banner: <input type="text" ng-model="newStory.banner"/></label>
+          <br>
+          <label for="summary">Summary: <textarea ng-model="newStory.summary"></textarea></label>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" ng-click="addStory()">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+
 </div>

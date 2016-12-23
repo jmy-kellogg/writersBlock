@@ -36,6 +36,14 @@ router.get('/:storyId', function (req, res) {
   res.json(req.story);
 });
 
+router.post('/', function(req, res, next){
+  Stories.create(req.body)
+  .then(function(story) {
+    res.json(story);
+  })
+  .catch(next);
+})
+
 router.post('/:storyId', function(req, res, next){
   
 })

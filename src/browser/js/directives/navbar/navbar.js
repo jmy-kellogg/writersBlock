@@ -3,10 +3,9 @@ app.directive('navbar', function($rootScope) {
 
     return {
         restrict: 'E',
-        scope: { searchBoxResult: '=' },
+        scope: {},
         templateUrl: '/js/directives/navbar/navbar.html',
         link: function(scope) {
-
             // scope.user = null;
 
             // scope.isLoggedIn = function() {

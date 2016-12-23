@@ -27,7 +27,7 @@ const seedUsers = function() {
 const seedStories = function() {
 
     let stories = [
-        {title: 'Harry Potter', banner: 'http://orig04.deviantart.net/2bab/f/2011/170/3/f/harry_potter_hogwarts_banner_by_uprisen257-d3jcvxa.png', content:'Chapter One: ', userId: '1'},
+        {title: 'Harry Potter', banner: 'http://orig04.deviantart.net/2bab/f/2011/170/3/f/harry_potter_hogwarts_banner_by_uprisen257-d3jcvxa.png', summary:"a boy discovers he's a wizard and attends to Hogwars.", content:'Chapter One: ', userId: '1'},
         {title: 'Game of Thrones', userId: '2'},
         {title: 'Lord of the Rings', userId: '3'},
         {title: 'Percy Jackson', userId: '1'},

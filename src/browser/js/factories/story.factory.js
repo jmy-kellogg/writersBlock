@@ -7,5 +7,9 @@ app.factory('StoryFactory', function($http) {
 	storyObj.getOne= function(id){
 		return $http.get('/api/stories/'+id)
 	}
+	storyObj.addOne= function(newStory){
+		return $http.post('/api/stories/', newStory)
+
+	}
 	return storyObj
 })
